@@ -134,7 +134,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="group relative overflow-hidden bg-background">
+            <Link href="/projects" className="group relative overflow-hidden bg-background block cursor-pointer">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={project1Img} 
@@ -148,11 +148,14 @@ export default function Home() {
                   Melonba
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-white mb-2">33 sq Double Storey</h3>
-                <p className="text-white/80">5 Bedroom • 1 Media • 3 Bath • 2 Garage</p>
+                <p className="text-white/80 mb-4">5 Bedroom • 1 Media • 3 Bath • 2 Garage</p>
+                <div className="flex items-center gap-2 text-accent font-semibold text-sm group-hover:text-white transition-colors">
+                  View Project <ArrowRight className="h-4 w-4" />
+                </div>
               </div>
-            </div>
+            </Link>
             
-            <div className="group relative overflow-hidden bg-background">
+            <Link href="/projects" className="group relative overflow-hidden bg-background block cursor-pointer">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={project3Img} 
@@ -166,9 +169,12 @@ export default function Home() {
                   Rouse Hill
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-white mb-2">23 sq Double Storey</h3>
-                <p className="text-white/80">5 Bedroom • 1 Media • 3 Bath • 2 Garage</p>
+                <p className="text-white/80 mb-4">5 Bedroom • 1 Media • 3 Bath • 2 Garage</p>
+                <div className="flex items-center gap-2 text-accent font-semibold text-sm group-hover:text-white transition-colors">
+                  View Project <ArrowRight className="h-4 w-4" />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

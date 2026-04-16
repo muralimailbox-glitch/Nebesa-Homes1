@@ -2,11 +2,11 @@ import { ArrowRight, Home as HomeIcon, Maximize, PaintBucket, Hammer, PlusCircle
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
-import newImg from "@assets/image_(7)_1776340795107.jpg";
+import newImg from "@assets/69_Arncliffe_Ave_Marsden_Park-01_1776342440949.JPG";
 import knockdownImg from "@assets/Mandyphotography.com.au-66_1776341515415.jpg";
 import grannyImg from "@assets/image_(8)_1776340795107.jpg";
 import duplexImg from "@assets/image_(9)_1776340795111.jpg";
-import customImg from "@assets/image_(4)_1776340795110.jpg";
+import customImg from "@assets/69_Arncliffe_Ave_Marsden_Park-10_1776342431234.jpg";
 import houselandImg from "@assets/image_1776340795109.jpg";
 
 const services = [

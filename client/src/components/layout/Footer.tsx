@@ -10,7 +10,7 @@ export function Footer() {
           
           {/* Brand */}
           <div className="space-y-4 md:col-span-1">
-            <Link href="/" className="inline-block">
+            <Link href="/" onClick={() => window.scrollTo(0, 0)} className="inline-block">
               <img src={logoImg} alt="Nebesa Homes Logo" className="h-20 w-20 object-cover rounded shadow-sm border border-primary-foreground/20" />
             </Link>
             <p className="text-primary-foreground/80 text-sm mt-4 max-w-xs">
@@ -30,12 +30,12 @@ export function Footer() {
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><Link href="/" className="hover:text-accent transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-accent transition-colors">What We Build</Link></li>
-              <li><Link href="/projects" className="hover:text-accent transition-colors">Projects</Link></li>
-              <li><Link href="/inclusions" className="hover:text-accent transition-colors">Inclusions</Link></li>
-              <li><Link href="/contact" className="hover:text-accent transition-colors">Contact Us</Link></li>
+              <li><Link href="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Home</Link></li>
+              <li><Link href="/about" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link href="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">What We Build</Link></li>
+              <li><Link href="/projects" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Projects</Link></li>
+              <li><Link href="/inclusions" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Inclusions</Link></li>
+              <li><Link href="/contact" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -43,11 +43,11 @@ export function Footer() {
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4 text-white">What We Build</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><Link href="/services#new-builds" className="hover:text-accent transition-colors">New Builds</Link></li>
-              <li><Link href="/services#knockdown" className="hover:text-accent transition-colors">Knockdown & Rebuild</Link></li>
-              <li><Link href="/services#granny-flats" className="hover:text-accent transition-colors">Granny Flats</Link></li>
-              <li><Link href="/services#duplexes" className="hover:text-accent transition-colors">Duplexes</Link></li>
-              <li><Link href="/services" className="hover:text-accent transition-colors">View All Services</Link></li>
+              <li><Link href="/services#new-builds" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">New Builds</Link></li>
+              <li><Link href="/services#knockdown" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Knockdown & Rebuild</Link></li>
+              <li><Link href="/services#granny-flats" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Granny Flats</Link></li>
+              <li><Link href="/services#duplexes" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Duplexes</Link></li>
+              <li><Link href="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">View All Services</Link></li>
             </ul>
           </div>
 
@@ -78,8 +78,8 @@ export function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Nebesa Homes. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/privacy" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
