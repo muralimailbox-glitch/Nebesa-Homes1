@@ -2,7 +2,7 @@ import { MapPin, ArrowRight, Bed, Bath, Car, MonitorPlay } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
-import project1Img from "@assets/image_(1)_1776340795106.jpg";
+import project1Img from "@assets/69_Arncliffe_Ave_Marsden_Park_NEW-02_1776340928340.jpg";
 import project2Img from "@assets/image_(2)_1776340795106.jpg";
 import project3Img from "@assets/image_(3)_1776340795110.jpg";
 
