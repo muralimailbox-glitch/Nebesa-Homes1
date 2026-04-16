@@ -20,7 +20,7 @@ export function Footer() {
               <a href="https://www.facebook.com/share/1BvrdVVMLa/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="https://www.instagram.com/nebesahomesptyltd/" target="_blank" rel="noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
