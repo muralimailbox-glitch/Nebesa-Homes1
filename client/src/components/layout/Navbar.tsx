@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@/assets/images/logo_transparent.png";
+import logoImg from "@assets/Screenshot_2026-04-16_173059_1776341116920.png";
 
 const links = [
   { href: "/", label: "Home" },
@@ -36,7 +36,7 @@ export function Navbar() {
       {/* Main Nav */}
       <div className="container flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <img src={logoImg} alt="Nebesa Homes Logo" className="h-14 w-auto object-contain" />
+          <img src={logoImg} alt="Nebesa Homes Logo" className="h-16 w-16 object-cover rounded shadow-sm border border-border/50" />
         </Link>
 
         {/* Desktop Nav */}

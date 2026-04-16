@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Mail, MapPin, Phone, Facebook, Instagram } from "lucide-react";
-import logoImg from "@/assets/images/logo_transparent.png";
+import logoImg from "@assets/Screenshot_2026-04-16_173059_1776341116920.png";
 
 export function Footer() {
   return (
@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4 md:col-span-1">
             <Link href="/" className="inline-block">
-              <img src={logoImg} alt="Nebesa Homes Logo" className="h-16 w-auto object-contain" />
+              <img src={logoImg} alt="Nebesa Homes Logo" className="h-20 w-20 object-cover rounded shadow-sm border border-primary-foreground/20" />
             </Link>
             <p className="text-primary-foreground/80 text-sm mt-4 max-w-xs">
               Homes that rise above. Build every home as if we are building our own.
