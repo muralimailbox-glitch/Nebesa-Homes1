@@ -2,9 +2,9 @@ import { MapPin, ArrowRight, Bed, Bath, Car, MonitorPlay } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
-import project1Img from "@/assets/images/project-1.jpg";
-import project2Img from "@/assets/images/project-2.jpg";
-import project3Img from "@/assets/images/project-3.jpg";
+import project1Img from "@assets/image_(1)_1776340795106.jpg";
+import project2Img from "@assets/image_(2)_1776340795106.jpg";
+import project3Img from "@assets/image_(3)_1776340795110.jpg";
 
 export default function Projects() {
   return (
@@ -110,6 +110,16 @@ export default function Projects() {
 
             {/* Project 4 */}
             <div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  Completed
+                </div>
+                <img 
+                  src={project1Img} 
+                  alt="Seven Hills Project" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
                   <MapPin className="h-4 w-4" />
@@ -124,6 +134,16 @@ export default function Projects() {
 
             {/* Project 5 */}
             <div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  Completed
+                </div>
+                <img 
+                  src={project2Img} 
+                  alt="Melonba Project 2" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
                   <MapPin className="h-4 w-4" />
@@ -141,6 +161,16 @@ export default function Projects() {
 
             {/* Project 6 */}
             <div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  Completed
+                </div>
+                <img 
+                  src={project3Img} 
+                  alt="Melonba Project 3" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
                   <MapPin className="h-4 w-4" />
@@ -155,6 +185,16 @@ export default function Projects() {
 
             {/* Project 7 */}
             <div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  Completed
+                </div>
+                <img 
+                  src={project1Img} 
+                  alt="Riverstone Project" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
                   <MapPin className="h-4 w-4" />

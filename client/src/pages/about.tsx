@@ -1,6 +1,6 @@
 import { Building2, CheckCircle2, Target, Users } from "lucide-react";
-import aboutImg from "@/assets/images/about.jpg";
-import heroImg from "@/assets/images/hero.jpg";
+import aboutImg from "@assets/image_(5)_1776340795111.jpg";
+import heroImg from "@assets/image_(6)_1776340795107.jpg";
 
 export default function About() {
   return (

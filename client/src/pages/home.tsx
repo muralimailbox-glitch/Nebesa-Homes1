@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Home as HomeIcon, MapPin } from "lucide-react";
-import heroImg from "@/assets/images/hero.jpg";
-import project1Img from "@/assets/images/project-1.jpg";
-import project2Img from "@/assets/images/project-2.jpg";
-import project3Img from "@/assets/images/project-3.jpg";
+import heroImg from "@assets/image_1776340795109.jpg";
+import project1Img from "@assets/image_(1)_1776340795106.jpg";
+import project2Img from "@assets/image_(2)_1776340795106.jpg";
+import project3Img from "@assets/image_(3)_1776340795110.jpg";
 
 export default function Home() {
   return (

@@ -2,9 +2,9 @@ import { ArrowRight, Home as HomeIcon, Maximize, PaintBucket, Hammer, PlusCircle
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
-import newImg from "@/assets/images/service-new.jpg";
-import grannyImg from "@/assets/images/service-granny.jpg";
-import duplexImg from "@/assets/images/service-duplex.jpg";
+import newImg from "@assets/image_(7)_1776340795107.jpg";
+import grannyImg from "@assets/image_(8)_1776340795107.jpg";
+import duplexImg from "@assets/image_(9)_1776340795111.jpg";
 
 const services = [
   {
