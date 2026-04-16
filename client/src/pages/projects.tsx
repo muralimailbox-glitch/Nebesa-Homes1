@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import project1Img from "@assets/69_Arncliffe_Ave_Marsden_Park_NEW-02_1776340928340.jpg";
 import project2Img from "@assets/image_(2)_1776340795106.jpg";
 import project3Img from "@assets/Mandyphotography.com.au-4_1776340995680.jpg";
+import project4Img from "@assets/image_1776341721870.jpg";
+import project5Img from "@assets/69_Arncliffe_Ave_Marsden_Park-1_1776341703739.jpg";
 
 export default function Projects() {
   return (
@@ -115,7 +117,7 @@ export default function Projects() {
                   Completed
                 </div>
                 <img 
-                  src={project1Img} 
+                  src={project4Img} 
                   alt="Seven Hills Project" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -139,7 +141,7 @@ export default function Projects() {
                   Completed
                 </div>
                 <img 
-                  src={project2Img} 
+                  src={project5Img} 
                   alt="Melonba Project 2" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
