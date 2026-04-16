@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, Home as HomeIcon, MapPin } from "lucide-react
 import heroImg from "@assets/image_1776340795109.jpg";
 import project1Img from "@assets/69_Arncliffe_Ave_Marsden_Park_NEW-02_1776340928340.jpg";
 import project2Img from "@assets/image_(2)_1776340795106.jpg";
-import project3Img from "@assets/image_(3)_1776340795110.jpg";
+import project3Img from "@assets/Mandyphotography.com.au-4_1776340995680.jpg";
 
 export default function Home() {
   return (
