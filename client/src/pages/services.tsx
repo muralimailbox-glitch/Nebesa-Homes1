@@ -3,8 +3,11 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 import newImg from "@assets/image_(7)_1776340795107.jpg";
+import knockdownImg from "@assets/image_(15)_1776340795109.jpg";
 import grannyImg from "@assets/image_(8)_1776340795107.jpg";
 import duplexImg from "@assets/image_(9)_1776340795111.jpg";
+import customImg from "@assets/image_(4)_1776340795110.jpg";
+import houselandImg from "@assets/image_1776340795109.jpg";
 
 const services = [
   {
@@ -20,7 +23,7 @@ const services = [
     title: "Knockdown & Rebuild",
     description: "Love your location but not your house? We help you start over on your existing block, maximizing its potential with a brand new Nebesa Home.",
     features: ["Site assessment & demolition", "Council approvals handled", "Design to suit your block", "Modernize your lifestyle"],
-    image: newImg,
+    image: knockdownImg,
     icon: <Hammer className="h-6 w-6" />
   },
   {
@@ -44,7 +47,7 @@ const services = [
     title: "Custom Homes",
     description: "Architectural builds featuring complex structural elements like suspended slabs and premium, bespoke finishes that make your home truly one-of-a-kind.",
     features: ["Suspended slabs", "Architectural features", "Bespoke material selection", "Complex structural builds"],
-    image: newImg,
+    image: customImg,
     icon: <PaintBucket className="h-6 w-6" />
   },
   {
@@ -52,7 +55,7 @@ const services = [
     title: "House & Land Packages",
     description: "Turn-key packages in growing communities across Sydney. Enjoy a streamlined building process with excellent standard inclusions.",
     features: ["Fixed price contracts", "Decent inclusions standard", "Strategic locations", "Ready to move in"],
-    image: newImg,
+    image: houselandImg,
     icon: <PenTool className="h-6 w-6" />
   }
 ];
