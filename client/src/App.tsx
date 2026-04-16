@@ -4,6 +4,7 @@ import Home from "@/pages/home";
 import About from "@/pages/about";
 import Services from "@/pages/services";
 import Projects from "@/pages/projects";
+import Inclusions from "@/pages/inclusions";
 import Contact from "@/pages/contact";
 
 import { Switch, Route } from "wouter";
@@ -23,6 +24,7 @@ function Router() {
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
           <Route path="/projects" component={Projects} />
+          <Route path="/inclusions" component={Inclusions} />
           <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
