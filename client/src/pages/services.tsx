@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 import newImg from "@assets/image_(7)_1776340795107.jpg";
-import knockdownImg from "@assets/image_(15)_1776340795109.jpg";
+import knockdownImg from "@assets/Mandyphotography.com.au-66_1776341515415.jpg";
 import grannyImg from "@assets/image_(8)_1776340795107.jpg";
 import duplexImg from "@assets/image_(9)_1776340795111.jpg";
 import customImg from "@assets/image_(4)_1776340795110.jpg";
