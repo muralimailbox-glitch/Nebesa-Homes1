@@ -43,10 +43,10 @@ export function Footer() {
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4 text-white">What We Build</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><Link href="/services#new-builds" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">New Builds</Link></li>
-              <li><Link href="/services#knockdown" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Knockdown & Rebuild</Link></li>
-              <li><Link href="/services#granny-flats" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Granny Flats</Link></li>
-              <li><Link href="/services#duplexes" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">Duplexes</Link></li>
+              <li><a href="/services#new-builds" className="hover:text-accent transition-colors">New Builds</a></li>
+              <li><a href="/services#knockdown" className="hover:text-accent transition-colors">Knockdown & Rebuild</a></li>
+              <li><a href="/services#granny-flats" className="hover:text-accent transition-colors">Granny Flats</a></li>
+              <li><a href="/services#duplexes" className="hover:text-accent transition-colors">Duplexes</a></li>
               <li><Link href="/services" onClick={() => window.scrollTo(0, 0)} className="hover:text-accent transition-colors">View All Services</Link></li>
             </ul>
           </div>
