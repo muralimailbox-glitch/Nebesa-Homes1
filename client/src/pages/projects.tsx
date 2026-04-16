@@ -3,6 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 import project1Img from "@assets/69_Arncliffe_Ave_Marsden_Park_NEW-02_1776340928340.jpg";
+import project6Img from "@assets/image_(4)_1776341818747.jpg";
+import project7Img from "@assets/Mandyphotography.com.au-41_1776341836290.jpg";
 import project2Img from "@assets/image_(2)_1776340795106.jpg";
 import project3Img from "@assets/Mandyphotography.com.au-4_1776340995680.jpg";
 import project4Img from "@assets/image_1776341721870.jpg";
@@ -168,7 +170,7 @@ export default function Projects() {
                   Completed
                 </div>
                 <img 
-                  src={project3Img} 
+                  src={project6Img} 
                   alt="Melonba Project 3" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -192,7 +194,7 @@ export default function Projects() {
                   Completed
                 </div>
                 <img 
-                  src={project1Img} 
+                  src={project7Img} 
                   alt="Riverstone Project" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
