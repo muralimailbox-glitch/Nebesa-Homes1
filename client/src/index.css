@@ -33,38 +33,38 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* LIGHT MODE - Professional Builder Theme (Navy & Gold/Ochre) */
+/* LIGHT MODE - Professional Builder Theme (Dark Grey & Gold) */
 :root {
-  /* Navy Blue Primary */
-  --primary: 215 25% 27%; 
-  --primary-foreground: 210 40% 98%;
+  /* Dark Slate/Grey from Logo Background */
+  --primary: 210 11% 30%; 
+  --primary-foreground: 0 0% 100%;
 
-  /* Gold/Ochre Accent */
-  --accent: 43 74% 49%;
-  --accent-foreground: 0 0% 100%;
+  /* Vibrant Gold from 'N' */
+  --accent: 43 100% 50%;
+  --accent-foreground: 210 11% 20%;
 
   /* Clean Backgrounds */
   --background: 0 0% 100%;
-  --foreground: 222 47% 11%;
+  --foreground: 210 11% 20%;
   
   --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
+  --card-foreground: 210 11% 20%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 222 47% 11%;
+  --popover-foreground: 210 11% 20%;
   
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 222 47% 11%;
+  --secondary: 210 11% 96%;
+  --secondary-foreground: 210 11% 20%;
   
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 16% 47%;
+  --muted: 210 11% 96%;
+  --muted-foreground: 210 11% 40%;
   
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 215 25% 27%;
+  --border: 210 11% 90%;
+  --input: 210 11% 90%;
+  --ring: 210 11% 30%;
   
   --radius: 0.5rem;
 }

@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@/assets/images/logo_transparent.png";
 
 const links = [
   { href: "/", label: "Home" },
@@ -35,11 +36,7 @@ export function Navbar() {
       {/* Main Nav */}
       <div className="container flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex flex-col">
-            <span className="font-heading text-2xl font-bold text-primary tracking-tight leading-none">NEBESA</span>
-            <span className="font-heading text-sm font-semibold text-accent tracking-widest leading-none mt-1">HOMES</span>
-            <span className="text-[10px] font-medium text-muted-foreground tracking-wide leading-none mt-1.5 uppercase">Homes that rise above</span>
-          </div>
+          <img src={logoImg} alt="Nebesa Homes Logo" className="h-14 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
