@@ -125,26 +125,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Tender Portal */}
-              <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
-                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
-                  <Building2 className="h-6 w-6 text-[#3D4F5F]" />
-                  <h3 className="font-heading font-bold text-xl text-[#3D4F5F]">
-                    Tender Portal
-                  </h3>
-                </div>
-                <p className="text-sm text-gray-600 mb-4">
-                  Are you a contractor or supplier? We have a dedicated portal
-                  for tender documents and supplier communication.
-                </p>
-                <Button
-                  variant="outline"
-                  className="w-full border-[#3D4F5F] text-[#3D4F5F] hover:bg-[#3D4F5F] hover:text-white"
-                >
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  Access Tender Portal
-                </Button>
-              </div>
             </div>
 
             {/* Contact Form — Right Column */}

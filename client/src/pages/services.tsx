@@ -135,7 +135,7 @@ export default function Services() {
             <div
               key={service.id}
               id={service.id}
-              className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center"
+              className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center scroll-mt-32"
             >
               {/* Image */}
               <div

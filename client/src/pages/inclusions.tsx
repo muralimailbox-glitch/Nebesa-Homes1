@@ -145,27 +145,24 @@ export default function Inclusions() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Page Header */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')] bg-cover bg-center" />
-        <div className="container relative z-10 px-4 md:px-6">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Tender & Inclusions</h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8">
-              Welcome to Your Future Home. Every NEBESA home reflects trust, pride, and lasting joy. From the foundation to the final flourish, we build with technical excellence and heartfelt intention.
-            </p>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <a href={tenderPdf} download="NEBESA_Homes_Tender_Inclusions.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-                <Download className="h-5 w-5" />
-                Download PDF Tender
-              </a>
-            </Button>
-          </div>
+      <section className="bg-[#3D4F5F] text-white py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4">Standard Inclusions</h1>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8">
+            Every Nebesa home reflects trust, pride, and lasting joy. From the foundation to the final flourish, we build with technical excellence and heartfelt intention.
+          </p>
+          <Button asChild size="lg" className="bg-[#FFB800] text-[#3D4F5F] hover:bg-[#FFB800]/90 font-bold h-14 px-8 text-base">
+            <a href={tenderPdf} download="Nebesa_Homes_Standard_Inclusions.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
+              <Download className="h-5 w-5" />
+              Download Inclusions PDF
+            </a>
+          </Button>
         </div>
       </section>
 
       {/* Special Upgrades Section (Highlighted) */}
       <section className="py-16 md:py-24 bg-accent/10 border-b border-accent/20">
-        <div className="container px-4 md:px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/3">
               <div className="inline-flex items-center justify-center p-3 bg-accent rounded-xl text-accent-foreground mb-4">
@@ -192,7 +189,7 @@ export default function Inclusions() {
 
       {/* Main Inclusions Grid */}
       <section className="py-16 md:py-24">
-        <div className="container px-4 md:px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">Standard Inclusions</h2>
             <p className="text-muted-foreground text-lg">

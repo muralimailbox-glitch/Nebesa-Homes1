@@ -21,11 +21,12 @@ export default async (request: Request, context: Context) => {
       return new Response(JSON.stringify({ error: "Name, email, and message are required" }), { status: 400 });
     }
 
-    // GoDaddy SMTP with Proofpoint
+    // SMTP — Office365 (GoDaddy/Proofpoint routes through M365)
+    const smtpPort = parseInt(process.env.SMTP_PORT || "587");
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtpout.secureserver.net",
-      port: parseInt(process.env.SMTP_PORT || "465"),
-      secure: true,
+      host: process.env.SMTP_HOST || "smtp.office365.com",
+      port: smtpPort,
+      secure: smtpPort === 465,
       auth: {
         user: process.env.SMTP_USER || "info@nebesahomes.au",
         pass: process.env.SMTP_PASS || "",
@@ -38,7 +39,7 @@ export default async (request: Request, context: Context) => {
     // Email to Nebesa Homes
     await transporter.sendMail({
       from: `"Nebesa Homes Website" <${process.env.SMTP_USER || "info@nebesahomes.au"}>`,
-      to: "info@nebesahomes.au",
+      to: "nebesahomes@gmail.com",
       replyTo: email,
       subject: `New Enquiry: ${interest || "General"} — ${fullName}`,
       html: `
