@@ -1,12 +1,12 @@
 [build]
-  command = "npm install && npx vite build"
+  command = "npm run build"
   publish = "dist/public"
 
 [build.environment]
   NODE_VERSION = "20"
 
 [dev]
-  command = "npx vite dev --port 5173"
+  command = "npm run dev"
   targetPort = 5173
   port = 8888
   autoLaunch = false
@@ -14,13 +14,11 @@
 [functions]
   directory = "netlify/functions"
 
-# SPA routing — all paths serve index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -29,7 +27,6 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Cache static assets
 [[headers]]
   for = "/assets/*"
   [headers.values]
