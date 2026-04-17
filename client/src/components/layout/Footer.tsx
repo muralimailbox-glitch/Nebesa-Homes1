@@ -5,7 +5,7 @@ import logoImg from "@assets/Screenshot_2026-04-16_173059_1776341116920.png";
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground pt-16 pb-8">
-      <div className="container px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
           {/* Brand */}

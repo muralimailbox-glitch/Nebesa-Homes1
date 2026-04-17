@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2 text-sm">
-        <div className="container flex justify-between items-center px-4 md:px-6">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-4">
             <a href="mailto:info@nebesahomes.au" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="h-4 w-4" />
@@ -35,7 +35,7 @@ export function Navbar() {
       </div>
 
       {/* Main Nav */}
-      <div className="container flex h-20 items-center justify-between px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-6 flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <img src={logoImg} alt="Nebesa Homes Logo" className="h-16 w-16 object-cover rounded shadow-sm border border-border/50" />
         </Link>

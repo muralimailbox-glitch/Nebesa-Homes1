@@ -1,130 +1,196 @@
-import { ArrowRight, Home as HomeIcon, Maximize, PaintBucket, Hammer, PlusCircle, PenTool } from "lucide-react";
+import {
+  ArrowRight,
+  BatteryCharging,
+  Building,
+  CheckCircle2,
+  ClipboardList,
+  Compass,
+  DollarSign,
+  Hammer,
+  Home as HomeIcon,
+  Layers,
+  LayoutGrid,
+  MapPin,
+  Maximize,
+  Paintbrush,
+  PenTool,
+  Plug,
+  Ruler,
+  Timer,
+  Volume2,
+  Wrench,
+  Zap,
+} from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
-import newImg from "@assets/69_Arncliffe_Ave_Marsden_Park-01_1776342440949.JPG";
-import knockdownImg from "@assets/Mandyphotography.com.au-66_1776341515415.jpg";
-import grannyImg from "@assets/image_(8)_1776340795107.jpg";
-import duplexImg from "@assets/image_(9)_1776340795111.jpg";
-import customImg from "@assets/69_Arncliffe_Ave_Marsden_Park-10_1776342431234.jpg";
-import houselandImg from "@assets/image_1776340795109.jpg";
+import img1 from "@assets/69_Arncliffe_Ave_Marsden_Park_NEW-02_1776340928340.jpg";
+import img2 from "@assets/marsdenpark-06.jpg";
+import img3 from "@assets/Mandyphotography.com.au-66_1776341515415.jpg";
+import img4 from "@assets/image_(8)_1776340795107.jpg";
+import img5 from "@assets/rousehill-40.jpg";
+import img6 from "@assets/rousehill-55.jpg";
 
 const services = [
   {
     id: "new-builds",
     title: "New Builds",
-    description: "Start fresh with a home designed perfectly for your lifestyle and land. From conceptual design to handing over the keys, we manage the entire process.",
-    features: ["Custom floor plans", "Premium inclusions", "Energy efficient design", "Complete project management"],
-    image: newImg,
-    icon: <HomeIcon className="h-6 w-6" />
+    description:
+      "Start fresh with a home designed perfectly for your lifestyle and land. From conceptual design to handing over the keys, we manage the entire process with precision and care.",
+    features: [
+      { icon: <PenTool className="h-5 w-5" />, text: "Custom design from scratch" },
+      { icon: <Paintbrush className="h-5 w-5" />, text: "Premium inclusions as standard" },
+      { icon: <BatteryCharging className="h-5 w-5" />, text: "Energy efficient design" },
+      { icon: <ClipboardList className="h-5 w-5" />, text: "Complete project management" },
+    ],
+    image: img1,
   },
   {
-    id: "knockdown",
+    id: "knockdown-rebuild",
     title: "Knockdown & Rebuild",
-    description: "Love your location but not your house? We help you start over on your existing block, maximizing its potential with a brand new Nebesa Home.",
-    features: ["Site assessment & demolition", "Council approvals handled", "Design to suit your block", "Modernize your lifestyle"],
-    image: knockdownImg,
-    icon: <Hammer className="h-6 w-6" />
-  },
-  {
-    id: "granny-flats",
-    title: "Granny Flats",
-    description: "Add space for family or create a new income stream in your backyard. Our granny flats are built to the same high standards as our main homes.",
-    features: ["1 to 3 bedroom designs", "Separate metering options", "Fast construction timeline", "Seamless integration with main home"],
-    image: grannyImg,
-    icon: <PlusCircle className="h-6 w-6" />
+    description:
+      "Love your location but not your house? We help you start over on your existing block, managing demolition, council approvals, and the entire rebuild from start to finish.",
+    features: [
+      { icon: <Hammer className="h-5 w-5" />, text: "Transform existing blocks" },
+      { icon: <ClipboardList className="h-5 w-5" />, text: "Council approvals handled" },
+      { icon: <Compass className="h-5 w-5" />, text: "Design to suit your block" },
+      { icon: <Wrench className="h-5 w-5" />, text: "Full demolition management" },
+    ],
+    image: img2,
   },
   {
     id: "duplexes",
     title: "Duplexes (Attached & Detached)",
-    description: "Maximize the value of your land. Whether you plan to live in one and rent the other, or sell both, our duplexes offer excellent return on investment.",
-    features: ["Attached and detached options", "Optimized use of land", "Acoustic and fire separation", "High-end dual living"],
-    image: duplexImg,
-    icon: <Maximize className="h-6 w-6" />
+    description:
+      "Maximise the value of your land with high-quality duplex developments. Whether you plan to live in one and rent the other, or sell both, our duplexes offer excellent return on investment.",
+    features: [
+      { icon: <Maximize className="h-5 w-5" />, text: "Maximize land value" },
+      { icon: <Volume2 className="h-5 w-5" />, text: "Acoustic and fire separation" },
+      { icon: <LayoutGrid className="h-5 w-5" />, text: "Attached and detached options" },
+      { icon: <Layers className="h-5 w-5" />, text: "High-end dual living" },
+    ],
+    image: img3,
   },
   {
-    id: "custom",
+    id: "granny-flats",
+    title: "Granny Flats",
+    description:
+      "Add space for family or create a new income stream in your backyard. Our granny flats are built to the same high standards as our main homes, with options from 1 to 3 bedrooms.",
+    features: [
+      { icon: <HomeIcon className="h-5 w-5" />, text: "1 to 3 bedroom designs" },
+      { icon: <Plug className="h-5 w-5" />, text: "Separate metering options" },
+      { icon: <Timer className="h-5 w-5" />, text: "Fast construction timeline" },
+      { icon: <Zap className="h-5 w-5" />, text: "Seamless backyard integration" },
+    ],
+    image: img4,
+  },
+  {
+    id: "custom-homes",
     title: "Custom Homes",
-    description: "Architectural builds featuring complex structural elements like suspended slabs and premium, bespoke finishes that make your home truly one-of-a-kind.",
-    features: ["Suspended slabs", "Architectural features", "Bespoke material selection", "Complex structural builds"],
-    image: customImg,
-    icon: <PaintBucket className="h-6 w-6" />
+    description:
+      "Architectural builds featuring complex structural elements and bespoke finishes that make your home truly one-of-a-kind. We specialise in challenging designs others shy away from.",
+    features: [
+      { icon: <Building className="h-5 w-5" />, text: "Suspended slabs and complex structures" },
+      { icon: <Ruler className="h-5 w-5" />, text: "Architectural features" },
+      { icon: <Paintbrush className="h-5 w-5" />, text: "Bespoke material selection" },
+      { icon: <PenTool className="h-5 w-5" />, text: "Premium custom finishes" },
+    ],
+    image: img5,
   },
   {
     id: "house-land",
     title: "House & Land Packages",
-    description: "Turn-key packages in growing communities across Sydney. Enjoy a streamlined building process with excellent standard inclusions.",
-    features: ["Fixed price contracts", "Decent inclusions standard", "Strategic locations", "Ready to move in"],
-    image: houselandImg,
-    icon: <PenTool className="h-6 w-6" />
-  }
+    description:
+      "Turn-key packages in growing communities across Sydney. Enjoy a streamlined building process with fixed pricing, excellent standard inclusions, and prime locations.",
+    features: [
+      { icon: <DollarSign className="h-5 w-5" />, text: "Fixed price contracts" },
+      { icon: <CheckCircle2 className="h-5 w-5" />, text: "Turn-key solutions" },
+      { icon: <MapPin className="h-5 w-5" />, text: "Strategic growing communities" },
+      { icon: <HomeIcon className="h-5 w-5" />, text: "Ready to move in" },
+    ],
+    image: img6,
+  },
 ];
 
 export default function Services() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Page Header */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-24">
-        <div className="container px-4 md:px-6">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">What We Build</h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-            From bespoke custom homes to smart investment duplexes, we bring precision and care to every build.
+      <section className="bg-[#3D4F5F] text-white py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4">
+            What We Build
+          </h1>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+            From bespoke custom homes to smart investment duplexes, we bring
+            precision and care to every build.
           </p>
         </div>
       </section>
 
       {/* Services List */}
       <section className="py-20 md:py-32">
-        <div className="container px-4 md:px-6 space-y-24">
+        <div className="max-w-7xl mx-auto px-6 space-y-28">
           {services.map((service, index) => (
-            <div 
-              key={service.id} 
+            <div
+              key={service.id}
               id={service.id}
-              className={`grid md:grid-cols-2 gap-12 items-center ${
-                index % 2 !== 0 ? "md:rtl" : ""
-              }`}
+              className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center"
             >
-              {/* Image side */}
-              <div className={`${index % 2 !== 0 ? "md:order-2" : "md:order-1"} relative`}>
-                <div className="aspect-[4/3] overflow-hidden rounded-xl">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
+              {/* Image */}
+              <div
+                className={`relative ${
+                  index % 2 !== 0 ? "md:order-2" : "md:order-1"
+                }`}
+              >
+                <div className="aspect-[4/3] overflow-hidden rounded-xl shadow-lg">
+                  <img
+                    src={service.image}
+                    alt={service.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-lg hidden md:block shadow-xl">
-                  {service.icon}
-                </div>
               </div>
 
-              {/* Content side */}
-              <div className={`${index % 2 !== 0 ? "md:order-1" : "md:order-2"} space-y-6`}>
-                <div className="flex items-center gap-4 mb-2 md:hidden">
-                  <div className="p-3 bg-accent text-accent-foreground rounded-lg">
-                    {service.icon}
-                  </div>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">{service.title}</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+              {/* Content */}
+              <div
+                className={`space-y-6 text-center md:text-left ${
+                  index % 2 !== 0 ? "md:order-1" : "md:order-2"
+                }`}
+              >
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#3D4F5F]">
+                  {service.title}
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-                
-                <div className="pt-4">
-                  <h4 className="font-heading font-bold text-primary mb-4 text-lg">Key Features</h4>
-                  <ul className="grid sm:grid-cols-2 gap-3">
+
+                <div className="pt-2">
+                  <ul className="grid sm:grid-cols-2 gap-4">
                     {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-accent" />
-                        <span className="text-foreground">{feature}</span>
+                      <li
+                        key={i}
+                        className="flex items-center gap-3 text-left"
+                      >
+                        <div className="flex-shrink-0 text-[#FFB800]">
+                          {feature.icon}
+                        </div>
+                        <span className="text-[#3D4F5F] font-medium">
+                          {feature.text}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="pt-6">
-                  <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    <Link href="/contact">Enquire about {service.title.toLowerCase()}</Link>
+                <div className="pt-4">
+                  <Button
+                    asChild
+                    className="bg-[#FFB800] text-[#3D4F5F] hover:bg-[#FFB800]/90 font-bold"
+                  >
+                    <Link href="/contact" className="inline-flex items-center gap-2">
+                      Enquire Now <ArrowRight className="h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -133,14 +199,22 @@ export default function Services() {
         </div>
       </section>
 
-      {/* FAQs or Additional Info CTA */}
-      <section className="py-20 bg-secondary">
-        <div className="container px-4 md:px-6 text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-heading font-bold text-primary mb-6">Have specific requirements?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            We specialize in tailoring our approach to your unique needs. Whether you have a challenging block of land (Battle Axe) or complex design requirements, our team has the expertise to deliver.
+      {/* CTA */}
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#3D4F5F] mb-6">
+            Have specific requirements?
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+            We specialise in tailoring our approach to your unique needs.
+            Whether you have a challenging block of land or complex design
+            requirements, our team has the expertise to deliver.
           </p>
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button
+            asChild
+            size="lg"
+            className="bg-[#3D4F5F] text-white hover:bg-[#3D4F5F]/90 text-base h-14 px-10 font-bold"
+          >
             <Link href="/contact">Discuss Your Project</Link>
           </Button>
         </div>
